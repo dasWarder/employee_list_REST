@@ -1,0 +1,20 @@
+version: '3.0'
+
+services:
+
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+    - '8899:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: pass
+      MONGO_INITDB_DATABASE: employee
+    networks:
+      - employees_net
+
+
+networks:
+  employees_net:
+    driver: bridge

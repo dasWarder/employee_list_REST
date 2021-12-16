@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      username: user
+      password: pwd
+      port: 8899
+      database: employee
+
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+    show-sql: true
