@@ -1,6 +1,5 @@
 package com.example.employeecrmangulardemo;
 
-import com.example.employeecrmangulardemo.service.EmployeeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @RequiredArgsConstructor
 public class EmployeeCrmAngularDemoApplication {
 
-    private final EmployeeService employeeService;
+//    private final EmployeeService employeeService;
 
     public static void main(String[] args) {
         SpringApplication.run(EmployeeCrmAngularDemoApplication.class, args);
